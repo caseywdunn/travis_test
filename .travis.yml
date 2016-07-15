@@ -2,6 +2,8 @@
 language: python
 os:
   - linux
+env:
+  - GH_USERNAME=caseywdunn GH_EMAIL=casey_dunn@brown.edu GH_REPONAME=travis_pushback
 python:
   - 2.7
 notifications:
@@ -9,7 +11,6 @@ notifications:
 before_install:
   - pwd
   - git branch -a
-
 script:
   - python collatz.py input.txt > output.txt
   - cat output.txt
@@ -18,5 +19,6 @@ after_success:
   - num=`cat input.txt`
   - echo "$pounds $num:" >> README.md
   - cat output.txt >> README.md
+
   - ./initial_push.sh
 #  - ./all_other_pushes.sh
