@@ -3,7 +3,7 @@ language: python
 os:
   - linux
 env:
-  - GH_USERNAME=caseywdunn GH_EMAIL=casey_dunn@brown.edu GH_REPONAME=travis_pushback
+  - GH_USERNAME=caseywdunn GH_EMAIL=casey_dunn@brown.edu GH_REPONAME=travis_test
 python:
   - 2.7
 notifications:
