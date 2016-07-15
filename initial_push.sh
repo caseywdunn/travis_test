@@ -12,7 +12,7 @@ commit_files() {
 }
 
 upload_files() {
-  git remote add origin-pages https://${GH_TOKEN}@github.com/paulstey/${GH_REPONAME}.git
+  git remote add origin-pages https://${GH_TOKEN}@github.com/${GH_USERNAME}/${GH_REPONAME}.git
   git push --quiet --set-upstream --force origin-pages gh-pages
 }
 
