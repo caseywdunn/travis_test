@@ -18,5 +18,5 @@ after_success:
   - num=`cat input.txt`
   - echo "$pounds $num:" >> README.md
   - cat output.txt >> README.md
-
-  - ./all_other_pushes.sh
+  - ./initial_push.sh
+#  - ./all_other_pushes.sh
